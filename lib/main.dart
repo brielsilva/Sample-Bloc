@@ -1,5 +1,6 @@
 import 'package:bloc/counter.dart';
 import 'package:flutter/material.dart';
+import 'package:bloc/counter_bloc.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home:
+          MyHomePage(title: 'Flutter Demo Home Page', bloc: new CounterBloc()),
     );
   }
 }
-
